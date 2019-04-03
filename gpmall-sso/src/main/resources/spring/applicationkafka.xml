@@ -8,7 +8,7 @@
         <constructor-arg>
             <map>
                 <entry key="bootstrap.servers"
-                       value="35.185.164.128:9092"/>
+                       value="39.108.109.233:9092"/>
 
                 <entry key="client.id" value="gpmall-sso"/>
                 <entry key="acks" value="-1"/>
