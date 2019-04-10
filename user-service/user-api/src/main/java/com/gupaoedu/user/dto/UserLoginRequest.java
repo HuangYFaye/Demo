@@ -3,9 +3,11 @@ package com.gupaoedu.user.dto;
 import java.io.Serializable;
 
 /**
- * 腾讯课堂搜索 咕泡学院
- * 加群获取视频：608583947
- * 风骚的Michael 老师
+ * @author huangyifei
+ * @version V1.0
+ * @ClassName: UserLoginRequest
+ * @Description: RPC请求
+ * @date 2019/4/4
  */
 public class UserLoginRequest implements Serializable {
 

@@ -106,6 +106,17 @@
             <artifactId>spring-kafka</artifactId>
             <version>2.1.7.RELEASE</version>
         </dependency>
+
+        <!--- Lombok Dependences-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gupaoedu.common</groupId>
+            <artifactId>gpmall-common</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

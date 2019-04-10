@@ -1,19 +1,23 @@
 package com.gupaoedu.sso.controller;
 
 /**
- * 腾讯课堂搜索 咕泡学院
- * 加群获取视频：608583947
- * 风骚的Michael 老师
+ * @author huangyifei
+ * @version V1.0
+ * @ClassName: BaseController
+ * @Description: Controller父类
+ * @date 2019/4/4
  */
 public class BaseController {
 
-    static  ThreadLocal<String> uidThreadLocal=new ThreadLocal<>();
+    //线程安全
+    static ThreadLocal<String> uidThreadLocal = new ThreadLocal<>();
 
-    public void setUid(String uid){
+    public void setUid(String uid) {
         uidThreadLocal.set(uid);
     }
-    public String getUid(){
-      return  uidThreadLocal.get();
+
+    public String getUid() {
+        return uidThreadLocal.get();
     }
 
 }

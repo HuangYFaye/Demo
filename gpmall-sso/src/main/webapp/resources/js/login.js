@@ -7,15 +7,20 @@ $(function(){
             return;
         }
         $("#password").val(MD5(password));
+        var d={};
+        d.userName = username;
+        d.password = $("#password").val();
         $.ajax({
             url:"/login",
             type:"POST",
-            data:{username:username,password:$("#password").val()},
+            contentType:"application/json;charset=utf-8",
+            // data:{username:username,password:$("#password").val()},
+            data:JSON.stringify(d),
             success:function(data){
-                if(data.code=="000000"){
-                    window.location.href=data.data;
+                if(data.msgCd=="000000"){
+                    window.location.href=data.body;
                 }else{
-                    alert(data.msg);
+                    alert(data.msgInfo);
                 }
             }
         });

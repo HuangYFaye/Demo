@@ -1,29 +1,18 @@
 package com.gupaoedu.sso.controller.support;
 
 
-public class ResponseData {
+import com.gupaoedu.user.abs.AbstractResponse;
 
-    private String code;
-
-    private String message;
-
+/**
+ * @author huangyifei
+ * @version V1.0
+ * @ClassName: ResponseData
+ * @Description: Response实体类
+ * @date 2019/4/4
+ */
+public class ResponseData extends AbstractResponse {
+    
     private Object data;
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
 
     public Object getData() {
         return data;
@@ -36,8 +25,8 @@ public class ResponseData {
     @Override
     public String toString() {
         return "ResponseData{" +
-                "code='" + code + '\'' +
-                ", message='" + message + '\'' +
+                "code='" + this.getCode() + '\'' +
+                ", message='" + this.getMsg() + '\'' +
                 ", data=" + data +
                 '}';
     }

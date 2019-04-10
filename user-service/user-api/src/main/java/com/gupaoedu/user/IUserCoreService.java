@@ -1,12 +1,8 @@
 package com.gupaoedu.user;
 
+import com.gupaoedu.common.base.ResponseDTO;
 import com.gupaoedu.user.dto.*;
 
-/**
- * 腾讯课堂搜索 咕泡学院
- * 加群获取视频：608583947
- * 风骚的Michael 老师
- */
 public interface IUserCoreService {
 
     /**
@@ -14,7 +10,7 @@ public interface IUserCoreService {
      * @param request
      * @return
      */
-    UserLoginResponse login(UserLoginRequest request);
+    ResponseDTO<UserLoginResponse> login(UserLoginRequest request);
 
 
     /**
