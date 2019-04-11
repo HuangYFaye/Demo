@@ -6,7 +6,6 @@ import com.gupaoedu.common.base.ResponseDTO;
 import com.gupaoedu.common.constants.GpmallWebConstant;
 import com.gupaoedu.sso.controller.support.ResponseData;
 import com.gupaoedu.sso.controller.support.ResponseEnum;
-import com.gupaoedu.sso.controller.support.User;
 import com.gupaoedu.user.IUserCoreService;
 import com.gupaoedu.user.constants.ResponseCodeEnum;
 import com.gupaoedu.user.dto.UserLoginRequest;
